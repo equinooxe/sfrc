@@ -18,6 +18,7 @@ Encore
     // create hashed filenames (e.g. app.abc123.css)
     .enableVersioning(Encore.isProduction())
     .enableSourceMaps(!Encore.isProduction())
+    
 
 // export the final configuration
 module.exports = Encore.getWebpackConfig()

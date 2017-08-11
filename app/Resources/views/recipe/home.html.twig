@@ -1,5 +1,8 @@
 {% extends 'base.html.twig' %}
-
+{% set pps = {'a':'ZX -tm'} %}
 {% block body %}
+{{ react_component('SimpleApp' ,  {'props': pps}) }}
+<h2> Render some HTML </h2>
 {{ react_component('RecipesApp', {'props': props}) }}
+
 {% endblock %}
